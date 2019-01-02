@@ -6,7 +6,7 @@ var currentTime = function() {
   var date = new Date();
   var year = date.getFullYear();
   var _month = parseInt(date.getMonth())+1;
-  if(_month.length == 1){
+  if(_month%2 == 1){
     var month = "0"+_month;
   }else{
     var month = _month+"";
@@ -35,7 +35,7 @@ var currentDate = function() {
   var date = new Date();
   var year = date.getFullYear();
   var _month = parseInt(date.getMonth())+1;
-  if(_month.length == 1){
+  if(_month%2 == 1){
     var month = "0"+_month;
   }else{
     var month = _month+"";
@@ -54,7 +54,7 @@ var previousDate = function() {
   date.setDate(date.getDate()-1);
   var year = date.getFullYear();
   var _month = parseInt(date.getMonth())+1;
-  if(_month.length == 1){
+  if(_month%2 == 1){
     var month = "0"+_month;
   }else{
     var month = _month+"";
